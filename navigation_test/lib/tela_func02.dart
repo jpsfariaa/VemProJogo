@@ -15,8 +15,15 @@ class _TelaFuncionalidade02State extends State<TelaFuncionalidade02> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Consulta de Quadras"),
+        title: const Text("Reserva de Quadras"),
         backgroundColor: Theme.of(context).primaryColor,
+
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: (){
+            Navigator.popAndPushNamed(context, 'T2');
+          },
+        ),
       ),
 
       body: SingleChildScrollView(

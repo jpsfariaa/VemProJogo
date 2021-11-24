@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "158864288930",
+    "project_id": "vemprojogo-7dfed",
+    "storage_bucket": "vemprojogo-7dfed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158864288930:android:5ecfa93774a8dacdcf3bfb",
+        "android_client_info": {
+          "package_name": "com.example.navigation_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158864288930-ijsarkjk48aq8oqqlmak6v6sv0ovrac9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGlMyPG131FnX0pgPdyHFXlgJMAI_jf9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158864288930-ijsarkjk48aq8oqqlmak6v6sv0ovrac9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -180,9 +180,9 @@ class WidgetShowFunc02 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               OutlinedButton(
-                child: const Text('Consultar'),
+                child: const Text('Reservar'),
                 onPressed: (){
-                  Navigator.pushNamed(context, 'T5');
+                  Navigator.popAndPushNamed(context, 'T5');
                 },
                 style: OutlinedButton.styleFrom(
                   primary: Colors.white70,
