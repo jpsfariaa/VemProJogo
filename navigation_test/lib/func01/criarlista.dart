@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:navigation_test/main.dart';
-import 'listfunc01.dart';
 
 class TesteFunc01 extends StatefulWidget {
   const TesteFunc01({ Key? key }) : super(key: key);
@@ -109,13 +108,18 @@ class _TesteFunc01State extends State<TesteFunc01> {
                   ),
                 ),
               ),
-            
+
+              SizedBox(
+                height: 30.0,
+              ),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     padding: EdgeInsets.all(5.0),
                     width: 150.0,
+                    
                     child: OutlinedButton(
                       child: Text(
                         "Salvar",
@@ -125,7 +129,7 @@ class _TesteFunc01State extends State<TesteFunc01> {
                         backgroundColor: Colors.white70,
                         minimumSize: const Size(100, 50),
                       ),
-
+                                         
                       onPressed: (){
                         if (id == null) {
                           // Adicionar um Novo Documento
@@ -169,7 +173,7 @@ class _TesteFunc01State extends State<TesteFunc01> {
                       ),
 
                       onPressed: (){
-                        Navigator.popAndPushNamed(context, 'T2');
+                        Navigator.pop(context);
                       },
                     ),
                   ),

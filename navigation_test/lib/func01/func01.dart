@@ -1,7 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:navigation_test/func01/testefunc01.dart';
 import 'package:navigation_test/main.dart';
 
 class ListFunc01 extends StatefulWidget {
@@ -56,7 +54,7 @@ class _ListFunc01State extends State<ListFunc01> {
       ),
 
       onTap: (){
-        Navigator.pushNamed(context, 'T7');
+        Navigator.pushNamed(context, 'T7', arguments: item.id);
       },
     );
   }

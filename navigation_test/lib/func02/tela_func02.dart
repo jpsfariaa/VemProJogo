@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgetquadras.dart';
+import '../widgetquadras.dart';
 
 // Tela Funcionalidade 02
 class TelaFuncionalidade02 extends StatefulWidget {

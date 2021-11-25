@@ -53,7 +53,7 @@ class WidgetShowFunc extends StatelessWidget {
               Text(
                 descricao,
                 style: const TextStyle(
-                  fontSize: 13.5,
+                  fontSize: 12.5,
                   fontWeight: FontWeight.w100,
                   color: Colors.black,
                 ),
@@ -151,7 +151,7 @@ class WidgetShowFunc02 extends StatelessWidget {
               Text(
                 descfunc02,
                 style: const TextStyle(
-                  fontSize: 13.5,
+                  fontSize: 12.5,
                   fontWeight: FontWeight.w100,
                   color: Colors.black,
                 ),
@@ -249,7 +249,7 @@ class WidgetShowFunc03 extends StatelessWidget {
               Text(
                 descfunc03,
                 style: const TextStyle(
-                  fontSize: 13.5,
+                  fontSize: 12.5,
                   fontWeight: FontWeight.w100,
                   color: Colors.black,
                 ),

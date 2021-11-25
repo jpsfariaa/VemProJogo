@@ -1,15 +1,25 @@
 // Tela Secundária
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'main.dart';
 import 'codwidgets/widget_showfunc.dart';
 
-class TelaSecundaria extends StatelessWidget {
+class TelaSecundaria extends StatefulWidget {
   const TelaSecundaria({ Key? key }) : super(key: key);
-  
+
+  @override
+  _TelaSecundariaState createState() => _TelaSecundariaState();
+}
+
+class _TelaSecundariaState extends State<TelaSecundaria> {
+  // ignore: prefer_typing_uninitialized_variables
+  var nameUser;
+
   @override
   Widget build(BuildContext context) {
+
+    nameUser = FirebaseAuth.instance.currentUser!.email;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
@@ -52,9 +62,9 @@ class TelaSecundaria extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
-                    "Olá, ",
+                    "Olá, $nameUser. Seja Bem-Vindo(a)!",
                     textAlign: TextAlign.left,
                     textDirection: TextDirection.ltr,
                     style: TextStyle(
@@ -62,28 +72,7 @@ class TelaSecundaria extends StatelessWidget {
                       fontSize: 20.0,
                     )
                   ),
-                  
-                  Text(
-                    "<User>",
-                    textAlign: TextAlign.center,
-                    textDirection: TextDirection.ltr,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20.0,
-                    ),
-                  ),
-                  
-                  Text(
-                    " seja Bem-Vindo(a)!",
-                    textAlign: TextAlign.right,
-                    textDirection: TextDirection.ltr,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20.0,
-                    ),
-                  ),
-      
+
                   SizedBox(
                     height: 75.0,
                   ),

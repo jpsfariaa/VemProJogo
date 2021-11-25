@@ -4,12 +4,11 @@ import 'package:flutter/material.dart';
 
 import 'package:navigation_test/pages/tela_login.dart';
 import 'package:navigation_test/pages/criar_conta.dart';
-import 'package:navigation_test/func01/testefunc01.dart';
 
-import 'func01/listfunc01.dart';
-import 'func01/testefunc01.dart';
-import 'tela_func02.dart';
-import 'tela_func03.dart';
+import 'func01/func01.dart';
+import 'func01/criarlista.dart';
+import 'func02/tela_func02.dart';
+import 'func03/tela_func03.dart';
 import 'tela_sec.dart';
 import 'codwidgets/widget_sobre.dart';
 
@@ -45,11 +44,9 @@ Future<void> main() async {
 
         // Telas Funcionalidade 02
         'T5' : (context) => const TelaFuncionalidade02(),
-        // 'T8' : (context) => const ListFunc02(),
 
         // Telas Funcionalidade 03
         'T6' : (context) => const TelaFuncionalidade03(),
-        // 'T9' : (context) => const ListFunc03(),
       },
     ),
   );
