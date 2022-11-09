@@ -39,7 +39,7 @@ class WidgetArea extends StatelessWidget {
         color: Colors.white54,
       ),
 
-      width: MediaQuery.of(context).size.width * 0.50,
+      width: MediaQuery.of(context).size.width * .70,
 
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -138,7 +138,7 @@ class WidgetArea extends StatelessWidget {
                       Text(
                         hrarea,
                         style: const TextStyle(
-                          fontSize: 18.0,
+                          fontSize: 13.5,
                           color: Colors.black,
                         ),
                       ),
