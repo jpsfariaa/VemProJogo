@@ -53,7 +53,7 @@ class _TelaSecundariaState extends State<TelaSecundaria> {
 
       body: SingleChildScrollView(
         child: Container(
-          width: double.infinity,
+          width: MediaQuery.of(context).size.width,
           height: 1350,
 
           color: Colors.green.shade700,
@@ -99,6 +99,7 @@ class _TelaSecundariaState extends State<TelaSecundaria> {
               ),
       
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   WidgetShowFunc(
                     'Listagem de Metas', 
