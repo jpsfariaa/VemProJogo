@@ -12,10 +12,8 @@ class WidgetSobre extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return Container(
       margin: const EdgeInsets.fromLTRB(20, 20, 0, 0),
-
       padding: const EdgeInsets.all(30),
 
       decoration: BoxDecoration(
@@ -31,9 +29,11 @@ class WidgetSobre extends StatelessWidget {
         color: Colors.white54,
       ),
 
-      width: MediaQuery.of(context).size.width * 0.50,
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height * .40,
 
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             "Desenvolvedor: " + dev,
@@ -45,20 +45,12 @@ class WidgetSobre extends StatelessWidget {
           ),
 
           // Incluir a Foto do Dev
-          Container(
-            decoration: BoxDecoration(
-              border: Border.all(
-                width: 1,
-              ),
-            ),
-            child: Image.asset(
-              foto,
-              width: 275.0,
-              height: 275.0,
-              fit: BoxFit.contain,
-            ),
+          Image.asset(
+            foto,
+            width: 175.0,
+            height: 175.0,
+            fit: BoxFit.contain,
           ),
-
         ], // Children
       ),
     );
@@ -94,7 +86,7 @@ class WidgetSobre02 extends StatelessWidget {
         color: Colors.white54,
       ),
 
-      width: MediaQuery.of(context).size.width * 0.50,
+      width: MediaQuery.of(context).size.width,
 
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
