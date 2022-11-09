@@ -28,8 +28,8 @@ class _TelaFuncionalidade03State extends State<TelaFuncionalidade03> {
 
       body: SingleChildScrollView(
         child: Container(
-          width: double.infinity,
-          height: 1950,
+          width: MediaQuery.of(context).size.width,
+          height: 1750,
 
           color: Theme.of(context).primaryColor,
           padding: const EdgeInsets.all(30.0),
