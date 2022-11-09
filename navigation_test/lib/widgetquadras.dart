@@ -41,7 +41,7 @@ class WidgetQuadras extends StatelessWidget {
         color: Colors.white54,
       ),
 
-      width: MediaQuery.of(context).size.width * 0.50,
+      width: MediaQuery.of(context).size.width,
 
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -49,7 +49,7 @@ class WidgetQuadras extends StatelessWidget {
           Text(
             nomequadra,
             style: const TextStyle(
-              fontSize: 24.0,
+              fontSize: 25.0,
               fontWeight: FontWeight.bold,
               color: Colors.black,
             ),
@@ -140,7 +140,7 @@ class WidgetQuadras extends StatelessWidget {
                       Text(
                         horarioquadra,
                         style: const TextStyle(
-                          fontSize: 18.0,
+                          fontSize: 15.0,
                           color: Colors.black,
                         ),
                       ),
